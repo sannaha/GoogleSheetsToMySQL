@@ -18,7 +18,7 @@ import java.util.Date;
 public class ProcessData {
     public static void main(String[] args) throws IOException, SQLException, ParseException {
         //字符流读取文件
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\Document\\Workspace\\GoogleSheetsToMySQL\\2020年初隔离日记 - 工作表1.tsv"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(args[0]));
 
         ArrayList<DailyLog> dailyLogs = new ArrayList<>();
         String line;
